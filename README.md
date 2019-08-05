@@ -1,21 +1,12 @@
 # travel
+ 
+ router-view 显示当前路由地址对应的内容
+ router-link 页面跳转
+ 多页应用  页面跳转时 返回html
+    首屏时间快，SEO效果好
+    页面切换慢
+  单页应用  页面跳转时 js渲染
+    页面切换快 (js请求，请求html)
+    首屏时间慢，SEO差
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+  
