@@ -5,7 +5,7 @@
         <img class="swiper-img" :src="item.imgUrl"/>
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
-  </swiper>
+    </swiper>
   </div>
 </template>
 
@@ -41,7 +41,7 @@ export default {
 .wrapper
   height 0
   width 100%
-  padding-bottom 31.25%
+  padding-bottom 26.25%
   .swiper-img
     width 100%
 </style>
