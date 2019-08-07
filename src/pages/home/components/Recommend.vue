@@ -5,13 +5,13 @@
       <router-link
         tag="li"
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
         :to="'/detail/' + item.id"
       >
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
-          <!-- <p class="item-title">{{item.title}}</p> -->
+          <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
@@ -24,35 +24,11 @@
 export default {
   name: 'HomeRecommend',
   props: {
-    // list: Array
+    list: Array
   },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }, {
-        id: '0004',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }, {
-        id: '0005',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }, {
-        id: '0006',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1906/31/31d34ee8f3de0e99a3.img.jpg_200x200_39621b26.jpg',
-        desc: '南昌玛雅乐园'
-      }]
+
     }
   }
 }
