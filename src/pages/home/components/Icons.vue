@@ -93,6 +93,7 @@ export default {
     height 0
     padding-bottom 25%
     overflow hidden
+    margin-top 0.1rem
     .icon-img
       position absolute
       top 0
